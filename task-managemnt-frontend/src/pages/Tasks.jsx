@@ -100,10 +100,27 @@ const Tasks = () => {
 
   return (
     <DashboardLayout>
-      <div className="task-header">
-        <h2>Tasks Management</h2>
-        <button onClick={() => setShowAddModal(true)}>+ Add Task</button>
-      </div>
+     <div className="task-header">
+  <h2>Tasks Management</h2>
+
+  <div style={{ display: "flex", gap: "10px" }}>
+    <button onClick={() => setShowAddModal(true)}>
+      + Add Task
+    </button>
+
+    <button
+      style={{ background: "#555" }}
+      onClick={() => {
+        localStorage.removeItem("token");
+        sessionStorage.removeItem("token");
+        window.location.href = "/login";
+      }}
+    >
+      Sign Out
+    </button>
+  </div>
+</div>
+
 
       <table>
         <thead>
