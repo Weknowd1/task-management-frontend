@@ -9,7 +9,7 @@
   position: absolute;
   top: 20px;
   left: 30px;
-  height: 40px;
+  height: 70px;
 }
 
 .auth-left {
@@ -44,11 +44,46 @@
 }
 
 .auth-right button {
-  width: 100%;
+  width: 50%;
   padding: 12px;
-  background: white;
+  background: yellow;
   border: none;
   border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
+}
+
+/* Form structure */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Row for remember + signup/signin */
+.auth-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0 16px;
+  font-size: 14px;
+}
+
+/* Remember me checkbox + text */
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Auth links */
+.auth-link {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Button spacing */
+.auth-right button {
+  margin-top: 10px;
 }

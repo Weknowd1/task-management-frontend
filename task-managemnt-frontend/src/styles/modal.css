@@ -1,4 +1,4 @@
-.modal-bg {
+/* .modal-bg {
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.4);
@@ -12,4 +12,44 @@
   padding: 30px;
   border-radius: 8px;
   width: 350px;
+} */
+
+.modal-bg {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.modal button {
+  padding: 10px;
+  background: #4a4fd9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal p {
+  text-align: center;
+  cursor: pointer;
+  color: #666;
 }
