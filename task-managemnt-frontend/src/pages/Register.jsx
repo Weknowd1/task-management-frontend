@@ -2,19 +2,18 @@ import { useState } from "react";
 import AuthLayout from "../layouts/AuthLayout";
 import api from "../services/api";
 
-const Login = () => {
+const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const submit = async (e) => {
     e.preventDefault();
-    const res = await api.post("/auth/login", { email, password });
-    localStorage.setItem("token", res.data.token);
-    window.location.href = "/tasks";
+    await api.post("/auth/register", { email, password });
+    window.location.href = "/login";
   };
 
   return (
-    <AuthLayout title="Welcome Login System">
+    <AuthLayout title="Welcome Sign Up System">
       <form onSubmit={submit}>
         <input placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
         <input
@@ -22,10 +21,10 @@ const Login = () => {
           placeholder="Password"
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button>Sign In</button>
+        <button>Sign Up</button>
       </form>
     </AuthLayout>
   );
 };
 
-export default Login;
+export default Register;
