@@ -1,11 +1,11 @@
 import "../styles/auth.css";
-// import logo from "../assets/lemonpay.png";
+import logo from "../assets/lemonpay.png";
 
 
 const AuthLayout = ({ title, children }) => {
   return (
     <div className="auth-bg">
-      {/* <img src={logo} alt="logo" className="auth-logo" /> */}
+      <img src={logo} alt="logo" className="auth-logo" />
 
       <div className="auth-left">
         <h1>
