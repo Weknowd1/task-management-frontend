@@ -1,16 +1,80 @@
-# React + Vite
+This repository contains the frontend of the Task Management application.
+The application is built using React (Vite) and provides user authentication and a dashboard to manage tasks.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+*Prerequisites*
 
-Currently, two official plugins are available:
+Before running the application locally, make sure the following are installed on your system:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Node.js (version 18 or above)
 
-## React Compiler
+npm (comes with Node.js)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Backend server for this project should be running
 
-## Expanding the ESLint configuration
+Project Setup (Local)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+*Follow the steps below to run the application on your local machine.*
+
+Step 1: Clone the Repository
+
+Clone the frontend repository from GitHub:
+
+git clone <your-frontend-repository-url>
+
+Navigate into the project directory:
+
+cd task-management-frontend
+
+Step 2: Install Dependencies
+
+Install all required npm packages by running:
+
+npm install
+
+Step 3: Start the Development Server
+
+Start the application in development mode:
+
+npm run dev
+
+Step 4: Open the Application in Browser
+
+Once the server starts successfully, open your browser and go to:
+
+http://localhost:5173
+
+The frontend application should now be running.
+
+Backend Connection
+
+This frontend application communicates with a backend API for authentication and task management.
+
+Please ensure that the backend server is running before trying to log in or manage tasks.
+
+Features
+
+User Signup and Login
+
+Remember Me functionality
+
+Protected Routes
+
+Task Dashboard
+
+Add, Edit, and Delete Tasks
+
+Logout functionality
+
+Notes
+
+The application uses token-based authentication.
+
+Login sessions are stored using localStorage or sessionStorage depending on the Remember Me option.
+
+This project is intended for local development and assignment evaluation.
+
+Author
+
+Vinod
+Task Management Application – Frontend
+
