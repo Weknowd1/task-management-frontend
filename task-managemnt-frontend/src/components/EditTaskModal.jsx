@@ -7,7 +7,8 @@ const EditTaskModal = ({ task, onClose, refresh }) => {
   const [description, setDescription] = useState(task.description);
 
   const update = async () => {
-    await api.put(`/tasks/${task._id}`, { taskName, description });
+    // await api.put(`/tasks/${task._id}`, { taskName, description });
+    await api.put(`/api/tasks/${task._id}`, { taskName, description });
     refresh();
     onClose();
   };

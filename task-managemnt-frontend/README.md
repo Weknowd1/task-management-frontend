@@ -19,7 +19,7 @@ Step 1: Clone the Repository
 
 Clone the frontend repository from GitHub:
 
-git clone <your-frontend-repository-url>
+git clone https://github.com/Weknowd1/task-management-frontend.git
 
 Navigate into the project directory:
 
